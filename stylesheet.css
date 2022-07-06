@@ -10,8 +10,11 @@ input{
     width: 100%;
     margin: 10px;
     padding: 10px;
+    border-radius: 5px;
 }
 .flex-container{
+    gap: 10%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -19,11 +22,11 @@ input{
 }
 
 .first-part{
-    flex: 1;
+    flex: 45%;
     
 }
 .second-part{
-    flex: 1;
+    flex: 45%;
 }
 .full-part{
     flex: 100%;
@@ -44,4 +47,5 @@ button#register{
 }
 button#sign-in{
     background-color: green;
+    border-radius: 5px;
 }
