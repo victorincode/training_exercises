@@ -4,57 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up Page</title>
+    <title>Login</title>
     <link rel="stylesheet" href="./stylesheet.css">
 </head>
 <body>
-    <h1>Sign Up</h1>
-    <div class="flex-container">
-        <div class="first-part">
-            <form>
-                <input type="text" placeholder="First Name">
-            </form>
+    <form method="post" action="#">
+        <div class="flex-container">
+            <div class="sign-up">
+                <h1>Sign up</h1>
+            </div>
+            <div class="first-name">
+                <input type="text" placeholder="First Name" required>
+            </div>
+            <div class="last-name">
+                <input type="text" placeholder="Last Name" required>
+            </div>
+            <div class="mobile-number">
+                <input type="text" placeholder="Mobile Number" required>
+            </div>
+            <div class="email-address">
+                <input type="text" placeholder="Email Address" required>
+            </div>
+            <div class="password">
+                <input type="password" placeholder="Password" required>
+            </div>
+            <div class="password-confirmation">
+                <input type="text" placeholder="Password Confirmation" required>
+            </div>
+            <div class="break"></div>
+            <div class="agree">
+                <input type="checkbox" name="agree">
+                <label for="agree">I agree</label>
+            </div>
+            <div class="disclosure">
+                By clicking <span class="disclosure-button">Register </span>,
+                you agree to the <a href="#" id="disclosure-terms-and-conditions">Terms and Conditions</a>
+                set out by this site, including our cookie use.
+            </div>
+            <div class="register">
+                <button id="register">Register</button>
+            </div>
+            <div class="sign-in">
+                <button id="sign-in">Sign in</button>
+            </div>
         </div>
-        <div class="second-part">
-            <form>
-                <input type="text" placeholder="Last Name">
-            </form>
-        </div>
-    <div class="full-part">
-        <form>
-            <input type="text" placeholder="Mobile Number">
-            <input type="text" placeholder="Email Address">
-        </form>
-    </div>
-    <div class="first-part">
-        <form>
-            <input type="password" placeholder="Password">
-        </form>
-    </div>
-    <div class="second-part">
-        <form>
-            <input type="password" placeholder="Confirm Password">
-        </form>
-    </div>
-    <div class="agree-to-terms">
-        <input type="checkbox" name="agree-terms">
-        <label for="agree-terms">I agree</label>
-    </div>
-    <div class="term-details">
-        <p>
-            By clicking <span style="background-color:blue;color:white">Register</span>,
-            you agree to the <span style="color:blue">Terms and Conditions</span> set out
-            by this site, including our cookie use
-        </p>
-    </div>
+    </form>
 
-    <div class="first-part">
-        <button id="register">Register</button>
-    </div>
-    <div class="second-part">
-        <button id="sign-in">Sign In</button>
-    </div> 
-</div>
-    
 </body>
 </html>

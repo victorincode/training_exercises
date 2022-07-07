@@ -1,57 +1,85 @@
-h1{
-    text-align: center;
-}
 *{
-    margin: 0;
-    padding: 0;
-}
-
-input{
-    width: 100%;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 5px;
+    margin: 0px;
+    padding: 0px;
 }
 .flex-container{
-    gap: 10%;
-    width: 90%;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    column-gap: 64px;
 }
 
-.first-part{
-    flex: 45%;
-    
+.first-name, .last-name, .password, .password-confirmation{
+    flex: 1;
+    width: 100%;
 }
-.second-part{
-    flex: 45%;
-}
-.full-part{
+.sign-up{
     flex: 100%;
 }
-.agree-to-terms{
-    flex: 10%;
-}
-.term-details{
-    flex: 80%;
+.mobile-number, .email-address{
+    flex: 100%;
 }
 
-p{
-    padding: 10px;
-}
-button{
+input{
     width: 100%;
-    margin: 10px;
+    margin-top: 32px;
     padding: 10px;
-    color: white;
-    border: none;
+    border-radius: 3px;
+}
+
+.register, .sign-in{
+    margin-top: 32px;
+    margin-left: 5%;
+    padding: 10px;
+    flex: 1;
+    width: 100%;
     border-radius: 5px;
 }
+
+button#register, button#sign-in{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
 button#register{
     background-color: blue;
 }
 button#sign-in{
     background-color: green;
+}
+
+.break{
+    flex-basis: 100%;
+    height: 0;
+}
+
+.agree{
+    flex: 10%;
+}
+
+.disclosure{
+    margin-top: 32px;
+    flex: 70%;
+}
+
+.disclosure-button{
+    background-color: blue;
+    color: white;
+}
+
+a#disclosure-terms-and-conditions{
+    color: blue;
+    text-decoration: none;
+}
+
+form{
 }
